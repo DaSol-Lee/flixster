@@ -29,10 +29,12 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 Describe any challenges encountered while building the app.
+
 Errors I faced: 
   - SIGABRT Error 
   - Black screen after launching
   - Error that my "TableViewController" and "NavigationController is unreachable because it has no entry points and no runtime access. 
+  
 How I fixed these errors:
   - Realized I had to make a screen "is Initial View Controller"
   - Fixed Outlets
