@@ -21,21 +21,43 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
 <img src="http://g.recordit.co/xtUtSTZRpV.gif" width=250> <img src="http://g.recordit.co/UuLWGEJ9oJ.gif" width=250><br>
 
 
 ### Notes
-Describe any challenges encountered while building the app.
 
 Errors I faced: 
   - SIGABRT Error 
   - Black screen after launching
   - Error that my "TableViewController" and "NavigationController is unreachable because it has no entry points and no runtime access. 
+  - Could not print to console view
   
 How I fixed these errors:
   - Realized I had to make a screen "is Initial View Controller"
-  - Fixed Outlets
-  - Forgot to remove a line of code that was changed in the video walkthrough
-  - Had one label pointed as 2 outlets
+  - Fixed Outlets because one label was used as the same outlet twice
+  - Forgot to remove a line of code that was changed in the video walkthrough so there were two contradictory lines
+  - Used Shift + Command + C to enable console view, because it was disabled on my mac
+
+My notes:
+- Learning Goal for Flix part 1 -> Implement Scrolling
+- AppDelegate.swift : runs first time when app launches
+- ViewController : screen, both collection of views and logic
+- main.storyboard : where views are designed; arrow indicates first screen
+- alpha : transparency
+- Asset folder : add images
+- Use Media Library to add images to screen (click Object Library and it is the next tab)
+    - a Media Library image and an image view is the same, except the media library image auto-resizes
+- Shift + Command + C shows console view
+- var Movies [[String:Any]]() // Creation of an array of dictionaries; " () " indicates creation
+- download array of movies and variable
+- Casting as! String tells you type 
+
+Table View Recipe:
+1. Add parameters : UITableViewDataSource and UITableViewDelegate
+2. Add outlets
+3. Change the 2 lines to self
+4. Add those 2 functions on the bottom
+5. Implement count, cell creation, and reload data
+
+
