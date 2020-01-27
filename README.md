@@ -3,7 +3,33 @@
 
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
+## Flix Part 2
+
+### User Stories
+
+#### REQUIRED (10pts)
+- [x] (5pts) User can tap a cell to see more details about a particular movie.
+- [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+
+#### BONUS
+- [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
+- [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
+
+### App Walkthough GIF
+
+<img src="http://g.recordit.co/Jo7BBgQNW2.gif" width=250><br>
+
+### Notes
+
+Errors I faced:
+  - In the Collection View Setup, my Poster Views displayed small squares instead of the normal sized poster as shown in the video, although I adjusted the size manually on the main.storyboard
+  - Created an outlet with the UIView instead of the UIImageView
+  
+  
+How I fixed these errors:
+  - Set the estimate size in collection view on the main storyboard to none instead of the its current set to automatic, which was probably why the cells were adjusting their size dynamically (from CodePath Discussions)
+  - Deleted the outlet and dragged the correct one
+
 
 ---
 
